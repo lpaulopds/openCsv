@@ -10,10 +10,10 @@
 <body>
     <?php $filename = fopen("MauticSurvey2021.csv", "r") ?>
     <?php $header = fgetcsv($filename, 0, ",") ?>
-    <?php $countRows = count($header) ?>
+    <?php $countColumns = count($header) ?>
 
     <h3>Mautic User Survey Results 2021 - Redacted</h3>
-    <p>Total Users: <b><?= $countRows ?></b></p>
+    <p>Total Cloumns: <b><?= $countColumns ?></b></p>
 
     <table>
         <thead>

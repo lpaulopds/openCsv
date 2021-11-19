@@ -37,5 +37,6 @@
             <?php endwhile ?>
         </tbody>
     </table>
+    <?php fclose($filename) ?>
 </body>
 </html>
